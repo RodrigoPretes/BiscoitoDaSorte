@@ -1,0 +1,170 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+:root{
+  font-size: 62.5%;
+}
+.hide{
+  display:none;
+}
+body{
+  font-size: 1.6rem;
+
+  display:grid;
+  place-items:center;
+  height: 100vh;
+
+
+  background: linear-gradient(45deg, #190361, #bb00ff);
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+main{
+  background: white;
+  
+  display: flex;
+  flex-direction: column;
+  text-align:center;
+  
+  gap: 3rem;
+
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.8);
+  border-radius: 5px;
+
+  padding: 4.8rem 6.4rem 6.4rem;
+
+  width: min(42.8rem, 90%);
+
+  margin-top: -5rem;
+
+}
+h1{
+  font-family: 'Montserrat';
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 2.9rem; 
+
+  margin-bottom: 1.5rem;
+  }
+p{
+  font-family: 'DM Sans';
+  font-weight: 400;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+  margin-bottom: 2rem;
+}
+.screen1 img{
+  cursor: pointer;
+}
+.screen1 img:hover{
+  animation: shake 150ms infinite;
+}
+/*.screen1*/
+ 
+
+/*screen2*/
+.p{
+  background: hsla(198, 32%, 92%, 1);
+  box-shadow: 2px 2px 2px rgba(85, 85, 85, 0.5);
+
+  width: 29.3rem;
+  height: 10.7rem;
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+
+  margin-bottom: 1.7rem;
+
+  animation: downtop 1s 350ms backwards;
+}
+.p p{
+  font-family: 'Dancing Script';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 2.4rem;
+  line-height: 2.9rem;
+  text-align: center;
+  
+}
+
+.screen2 img{
+  width: 30.0rem;
+  height: 20.0rem;
+  margin-bottom: 1.7rem.
+}
+.screen2 button{
+  padding: 1.6rem;
+  border: none;
+
+
+  background: #FF9500;
+  border-radius: 4px;
+
+  font-family: 'DM Sans';
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+
+
+  text-align: center;
+
+  color: #FFFFFF;
+
+  cursor: pointer;
+}
+button:hover{
+  background: #FF955F;
+}
+
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+@keyframes downtop{
+  0% {
+    opacity: 0;
+    transform: translateY(1.5rem);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0); 
+  }
+}
+
+@keyframes shake{
+  0%{
+    transform: translate(0);
+  }
+  25%{
+    transform: translate(-1.5rem,1.5rem);
+  }
+  37.5%{
+    transform: translate(-1.5rem,-1.5rem);
+  }
+  50%{
+    transform: translate(0rem, 0rem);
+  }
+  62.5%{
+    transform: translate(1.5rem,1.5rem);
+  }
+  75{
+    transform: translate(1.5rem,-1.5rem);
+  }
+  100%{
+    transform: translate(0);
+    
+  }
+}
